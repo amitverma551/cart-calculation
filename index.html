@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>a simple payment demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+        <div class="inner-container">
+                <h1>Select Your Payment Method</h1>
+                <div class="row">
+
+                        <div class="col-md-6">
+                                <div class="card-tabs">
+                                        <div class="selectbox-mobile">
+                                                <select>
+                                                    <option value="#one">Dabit/ Creadit card</option>
+                                                    <option selected value="#two">Netbanking</option>
+                                                    <option value="#three">Paytm</option>
+                                                    <option value="#four">Bhim API</option>
+                                                </select>
+                                        </div>
+                                        <ul>
+                                            <li><a href="#" class="link" showModel="#one">Dabit/ Credit Card</a></li>
+                                            <li class="active"><a href="#" class="link" showModel="#two">Netbanking</a></li>
+                                            <li><a href="#"  class="link" showModel="#three">Paytm</a></li>
+                                            <li><a href="#"  class="link" showModel="#four">Bhim API</a></li>
+                                        </ul>
+                                </div>
+                                <div class="card-panel">
+                                        <div class="pnl-container " id="one">
+                                            <h3>dabit card</h3>
+                                        </div>
+                                        <div class="pnl-container active" id="two">
+                                                <h3>netbanking</h3>
+                                        </div>
+                                        <div class="pnl-container " id="three">
+                                            <h3>Paytm</h3>
+                                        </div>
+                                        <div class="pnl-container " id="four">
+                                            <h3>bhim API</h3>
+                                        </div>
+                                </div>
+                        </div>
+                        
+                        <div class="order-panel col-md-6">
+                            <div class="border">
+                            <div class="order-panel-header">
+                                <i class="fa fa-shopping-cart " ></i><p>Order Sumary ( <span id="orderCount">0</span> items )</p>
+                            </div>
+                            <hr>
+                            <div class="order-sub-panel">
+                                    </div>
+                                    <!-- order items end  -->
+                                    <!--  total oredr panle start-->
+                                    <div class="totalOrderpanel">
+                                           <div class="col-md-10">
+                                                <div class="total-order-container sub">
+                                                       <div class="border-not">
+                                                            <div class="col-md-6 text-rigth">
+                                                                    <div>Sub Total:</div>
+                                                                    <div>Promo Code:</div>
+                                                                    <div>Tax:</div>
+                                                            </div>
+                                                            <div class="col-md-6 text-center">
+                                                                    <div class=sbt><i class="fa fa-inr"></i><span id="tprice">2400</span>/-</div>
+                                                                    <div class="pmc"><i class="fa fa-inr"></i><span id="pmcode">100</span>/-</div>
+                                                                    <div class="tax"><i class="fa fa-inr"></i><span id="tax">150</span>/-</div>
+                                                            </div>
+                                                            <div class="clear"></div>
+                                                       </div>
+        
+                                                    </div>
+                                           </div>
+                                           <div class="col-md-2">
+
+                                           </div>
+                                           <div class="clear"></div>
+                                           <div class="col-md-10">
+                                                <div class="total-order-container tbsub">
+                                                        <div class="border-both">
+                                                                <div class="col-md-6 text-rigth">
+                                                                        <div>Total Payble:</div>
+                                                                        
+                                                                </div>
+                                                                <div class="col-md-6 text-center">
+                                                                        <div class=sbt><i class="fa fa-inr"></i><span id="allTotal">38320</span>/-</div>
+                                                                      
+                                                                </div>
+                                                                <div class="clear"></div>
+                
+                                                            </div>
+                                                        </div>
+                                           </div>
+                                           <div class="col-md-2">
+                                                <div class=""></div>
+                                           </div>
+                                           <div class="clear"></div>
+                                    </div>
+                                    <!--  total oredr panle end-->
+                                    <hr>
+
+
+
+
+                            </div>
+                            <!-- order items sub panel end -->
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+</div>
+
+
+
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
